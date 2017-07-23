@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; list-style:none; font-size:12px;}
+a{text-decoration:none; color:#000;}
+.notice{width:298px; height:98px; border:1px solid #eee; margin:10px;}
+.notice-tit{background-color:#f7f7f7; height:27px;}
+.notice-tit li{float:left;width:58px; border-bottom:1px solid #eee; text-align:center;height:26px;
+				line-height:26px; padding:0 1px;}
+li.select{border-left:1px solid #eee; border-right:1px solid #eee; border-bottom-color:#FFF; background-color:#FFF; padding:0px; font-weight:bolder;}
+.notice-tit ul{width:301px; position:relative; left:-1px;}
+.notice-con .mod{margin:10px 6px;}
+.notice-con li{width:143px; float:left;height:25px; line-height:25px;}
+.notice-con li a:hover,.notice-tit li a:hover{color:#f90;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>透明度动画</title>
+<style type="text/css">
+*{margin:0; padding:0}
+#div1{height:200px; width:200px; background-color:#F00;filter: alpha(opacity:100);   /*IE浏览器专用*/
+opacity:1;  /*这是数值*/}
+</style>
+</head>
+
+<body>
+<div id="div1"></div>
+
+<script type="text/javascript">
+window.onload=function(){
+	var odiv=document.getElementById('div1');
+	odiv.onmousemove=function(){startmove(30)};
+	odiv.onmouseout=function(){startmove(100)};
+	var timer=null;
+	var alpha=100;
+	function startmove(target){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			var speed=0;
+			
+		if(alpha>target){speed=-10}
+			else{speed=10};	
+		if(alpha==target){clearInterval(timer)}	
+			else{alpha+=speed;
+			odiv.style.filter='alpha(opacity:'+alpha+')';//IE浏览器
+			odiv.style.opacity=alpha/100;
+			
+			};				
+									},30)
+		}
+	
+	}
+
+
+</script>
+</body>
+</html>

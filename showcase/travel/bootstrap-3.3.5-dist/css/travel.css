@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+#scrool{padding:80px 0;}
+#squfont{padding:0 0 80px;}
+/*header*/
+.line{border:2px solid #fff;}
+.navbar-form-mc{    margin-top: 15px;    width: 100%;}
+.navbar {
+    padding: 5px 0;
+    background-color: #88c5e1;
+    border: none;
+    border-bottom: 5px solid #54abd4;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background: transparent;
+    color: #fff;
+}
+.input-group-nav .input-group-btn:last-child > .btn, .input-group-nav .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -37px;
+}
+.input-group-nav .input-group-btn .btn {
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    color: #54abd4;
+}
+.navbar-nav > li > a:hover { 
+    
+    border-bottom: 2px solid #fff;
+}
+/*rgister*/
+.wrapper{background:url(../../img/registerbg.png);
+		 padding:96px 0 50px;
+		 background-size:cover;}
+.wrapper-into{text-align:center;}
+.nav-tabs {
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {border:0;
+    color:#FFFFFF;
+    cursor: default;
+   background-color:transparent;
+     border-bottom: 2px solid #fff;
+}
+.nav-tabs>li>a:hover{border:0;
+    color:#FFFFFF;
+    cursor: default;
+   background-color:transparent;
+     border-bottom: 2px solid #fff;}
+#register a{color:#FFFFFF;}
+.wrapper .form-control {
+    margin: 15px 0;
+}
+input:focus, input:active, input:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, textarea:focus, textarea:active, textarea:hover {
+    background: #fff;
+    border: 1px solid #54abd4;
+    box-shadow: none;
+    transition: all .25s ease-in-out;
+}
+input[type="text"], input[type="email"], input[type="date"], textarea {
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], textarea {
+    height: 40px;
+    padding: 6px 10px;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #777;
+}
+.btn-primary, .btn-forbid {
+    transition: 0.25s ease-out;
+}
+.btn-primary:hover {
+    top: .2rem;
+    color: #fff;
+    box-shadow: 0 .2rem 0 #54abd4,0 .1rem 0 rgba(255,255,255,.5) inset;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #88c5e1;
+    box-shadow: 0 .4rem 0 #54abd4,0 .1rem 0 rgba(255,255,255,.5) inset;
+}
+/*scrool*/
+#scrool .carousel img{width:100%;height:400px;}
+#scrool ul{list-style:none;}
+#scrool a img {
+	border: none;        /*  超链接下，图片的边框  */
+}
+#scrool a {
+	color: #333;
+	text-decoration: none;     /* 超链接样式 */
+}
+#scrool a:hover {
+	color: #ff0000;
+}
+#mooc {
+	-moz-border-radius: 15px;      /* Gecko browsers */
+	-webkit-border-radius: 15px;   /* Webkit browsers */
+	border-radius: 15px;
+	box-shadow: 2px 2px 10px #ababab;
+	         
+}
+/*  头部样式 */	
+#moocTitle {
+	height: 62px;
+	overflow: hidden;  /* 内容超出的部分要隐藏，免得撑高头部 */
+	font-size: 26px;
+	line-height: 62px;
+	padding-left: 30px;
+    background-color: #88C5E1;
+	border-radius: 8px 8px 0 0;
+	color: #fff;
+	position: relative;
+}
+#moocTitle a {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: inline;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+}
+/*  底部样式 */
+#moocBot {
+	height: 10px;
+	overflow: hidden;     /* 内容超出的部分要隐藏，免得撑高底部结构 */
+}
+/*  中间样式 */
+#moocBox {
+	height: 280px;
+	width: 335px;
+	margin-top: 10px;
+	overflow: hidden;    /*  超出的内容部分要隐藏，免得撑高中间部分 */
+}
+#mooc ul li {
+	height: 24px;
+}
+#mooc ul li a {
+	width: 180px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	
+	height: 24px;
+}
+#mooc ul li span {
+	float: right;
+	color: #999;
+}
+.containerword{ /*设置外层容器布局，这里主要是为了方便演示*/
+    font-size:14px;margin:0;padding:0;
+}
+/*清除ul默认显示样式*/
+ul { list-style-type:none; }
+ 
+a { /*去除超链接下划线*/
+    text-decoration:none; 
+}
+ 
+
+.hotwords li{ 
+    float:left; /*使热搜词都向左浮动*/
+    position:relative; /*由于li里面有元素要执行动画效果，所以将li的position设置为相对定位*/
+    width:68px; /*设置热搜词的基本宽高度*/
+    height:68px;
+    margin:0 2px 2px 0;
+    overflow:hidden; /*设置当热搜词显示的内容超过区域大小时，隐藏超出的部分*/
+    text-align:center; /*内部文字居中显示*/
+}
+ 
+.hotwords li.li_0,
+.hotwords li.li_3,
+.hotwords li.li_8,
+.hotwords li.li_11 { 
+    width:138px;
+}
+ 
+.hotwords li a{ /*将所有a元素都设置为块元素block，这样就可以调整它的高度*/
+    display:block;
+    text-decoration:none;
+    padding:2px;
+    height:64px;
+    color:white;
+}
+ 
+.hotwords li.li_0 a,
+.hotwords li.li_3 a,
+.hotwords li.li_8 a,
+.hotwords li.li_11 a { /*对于1,4,9和12这几个元素它的文字是垂直方向上居中显示的*/
+    width:135px;
+    line-height:64px;
+}
+ 
+.hotwords li.li_color_0{
+    background:#3064bb;
+}
+.hotwords li.li_color_1{
+    background:#53aecf;
+}
+ 
+.hotwords{ /*设置新闻热搜词区域的大小*/
+    width:100%;
+	
+}
+ 
+.keywords_title{ /*设置热搜词区域字体样式以及它距离底部外边距的距离*/
+    font-size:1.5em;
+    margin-bottom:10px;
+}
+.keywords_title,.keywords_title a{ /*设置热搜词title以及热搜词link的默认颜色*/
+    color:#3399CC;
+}
+ 
+
+.hotwords .detail{ 
+    position:absolute;/*设置detail为绝对定位，由于li设置了relative，所以detail是相对于li元素的绝对定位*/
+    background:rgba(0,0,0,0.8); /*设置detail区域的背景色*/
+    left:0; /*设置detail相对li的偏移距离*/
+    top:68px;
+    -webkit-transition:top 0.2s; /*当detail类型的元素top属性发生变化时，执行过度动画，过度时间为0.2s*/
+    -moz-transition:top 0.2s;
+    -o-transition:top 0.2s;
+    transition:top 0.2s;
+}
+ 
+.hotwords li:hover .detail{ /*当鼠标划过li时，设置detail类型元素的样式*/
+    top:0px;
+}/*新闻热词插件*/
+/*img-caption*/
+.filter{background:rgba(0,0,0,0.70); padding:90px 0;}
+.img-caption{display:block; position:absolute;    color: #fff;
+    font-weight: 600;
+    left: 50px;
+    bottom: 2px;
+    font-size: 15px;
+	width:100%;}
+.course-item{display:inline-block}
+/*contact*/
+#contact{color:#FFFFFF;
+		 background:url(../../img/%E6%88%AA%E5%9B%BE20160830224803.png) no-repeat; background-size:cover;}
+#contact .form-control{border:none; border-radius:0;
+						height:50px; font-weight:bold; margin-bottom:20px;}
+#contact input[type="submit"]{background-color:#40D2B1;
+								font-weight:bold;color:#FFFFFF;;
+								transition:all 0.5s;}
+#contact input[type="submit"]:hover{background-color:#479C89;}
+#contact textarea.form-control{height:auto;}
+#contact h2{font-weight:bold;
+			margin-bottom:20px;
+			margin-top:0;}
+#contact p{line-height:25px; margin-bottom:20px;}
+footer{text-align:center;
+		padding:20px;
+		font-weight:400;}
+		.navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+    background-color: transparent;
+}

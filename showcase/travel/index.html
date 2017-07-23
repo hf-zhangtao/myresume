@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>旅游首页</title>
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/travel.css">
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/animate.css">
+</head>
+
+<body>
+<section id="header">
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="row">
+<div class="col-md-3 pull-left">
+<img src="img/logo.png" style="height:70px;">
+<span class="navbar-caption" style="color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}">酷游cool</span>
+</div><!--col-md-3-->
+<div class="col-md-5">
+<!--<div class="navbar-search navbar-left">-->
+                        <form class="navbar-form-mc" method="get" action="#" role="search">
+                            <div class="input-group input-group-nav">
+                                <input type="text" class="form-control" id="input-search" name="key" placeholder="查找目的地...">
+                                <span class="input-group-btn">
+                                    <a role="button" class="btn" >
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </a>
+                                </span>
+                            </div>
+                        </form>
+                    <!--</div>-->
+</div><!--col-md-5-->
+<div class="col-md-4">
+ <div class="container">
+    <div class="navbar-header"> 
+    <button class="navbar-toggle" data-toggle="collapse" data-target="#zt" style="margin-top:-32px;">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>  
+    </button> 
+    
+    </div><!--navbar-header--> 
+   <div class="collapse navbar-collapse" id="zt">
+   <ul class="nav navbar-nav " style="margin-top:7px;">
+   <li class="active"><a href="index.html">首页</a></li>
+   <li><a href="news.html">旅游资讯</a></li>
+   <li><a href="route.html">热门线路</a></li>
+   <li><a href="#" data-toggle="modal" data-target="#exampleModal">注册会员</a></li>
+   <li  class="nav-page"><a href="#contact">联系我们</a></li>
+   </ul>
+   </div><!--zt-->
+ </div><!--container--> 
+</div><!--col-md-4-->
+</div><!--row-->
+</div><!--container-->
+</nav>
+</section><!--header-->
+<section id="register">
+<div class="wrapper">
+<div class="container">
+<div class="row wow fadeInUp"  data-wow-duration="1s" data-wow-delay="1s">
+<div class="col-md-8 wrapper-into">
+<img src="img/logo.png">
+<div style="    color: #fff;
+    font-size: 18px;
+    font-weight: 600;">
+酷游cool<br/>
+旅游，分享，改变
+</div>
+</div><!--col-md-8-->
+<div class="col-md-4">
+ <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="tab-sl">
+            <li role="presentation" class="active"><a href="#" aria-controls="login" role="tab" data-toggle="tab" id="tri-login">登录酷游</a></li>
+                            <li role="presentation"><a href="#r" aria-controls="register" role="tab" data-toggle="tab" id="tri-register">注册·加入酷游</a></li>
+                        </ul>
+ <div class="tab-content">
+                            <!-- Tab Log in -->
+                            <form role="tabpanel" class="tab-pane fade in active" id="login" onsubmit="return false;">
+                                <div class="tab-info" id="login-info"></div>
+                                <label for="login-email" class="sr-only">邮箱</label>
+                                <input type="email" id="login-email" class="form-control" placeholder="邮箱" required="" autofocus>
+                                <label for="login-password" class="sr-only">密码</label>
+                                <input type="password" id="login-password" class="form-control" placeholder="密码" required="">
+                                <div class="checkbox">
+                                <label class="f-white">
+                                <input type="checkbox" id="login-remember" checked=""> 记住我
+                                </label>
+                                <a class="pull-right forgot" href="#">忘记密码</a>
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block login">登录</button>
+                            </form>
+                            </div>
+</div><!--col-md-4-->
+</div><!--row-->
+</div><!--container-->
+</div><!--wrapper-->
+<div class="line"></div>
+</section><!--register-->
+<section id="scrool">
+<div class="container">
+<div class="row " >
+<div class="col-md-8 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="news.html"><img src="img/苏格兰.jpg" class="img-responsive"></a>
+          <div class="carousel-caption">
+            <p><strong>苏格兰</strong></p>
+            <p>喝一杯浓烈的威士忌，伴着风笛声探寻北方的传说</p>
+          </div>
+        </div>
+        <div class="item">
+        <a href="news.html"><img src="img/苏格里离岛.jpg" class="img-responsive"></a>
+          <div class="carousel-caption">
+          <p><strong>圣托里尼岛</strong></p>
+                        <p>这里只有无边的蓝与无尽的白</p>
+          </div>
+        </div><!--carousel-item-->
+        <div class="item">
+          <a href="news.html"><img src="img/土耳其.jpg" class="img-responsive"></a>
+          <div class="carousel-caption">
+            <p><strong>君士坦丁梦 星月国环游记</strong></p>
+                        <p>东北再偏北</p>
+          </div>
+        </div><!--carousel-item-->
+        <div class="item">
+          <a href="news.html"><img src="img/黄山.jpg" class="img-responsive"></a>
+          <div class="carousel-caption">
+            <p><strong>安徽黄山</strong></p>
+             <p>五岳归来不看山，黄山归来不看岳</p>
+          </div>
+        </div><!--carousel-item-->
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一页</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一页</span>
+      </a>
+    </div><!--滚动图片-->
+</div><!--col-md-8-->
+<div class="col-md-4 ">
+<div class="row wow fadeInRight"><!--  滚动程公告开始 -->
+<div  id="mooc"> 
+<!--  头部 -->
+<h3 id="moocTitle">最新旅游资讯<a href="news.html" target="_self">更多&lt;&lt;</a> </h3>
+<!--  头部结束 --> 
+<!--  中间 -->
+<div  id="moocBox">
+    <ul id="con1">
+        <li><a href="news.html">1.苏格兰旅游资讯</a><span>2016-09-18</span></li>
+        <li><a href="news.html">2.希腊旅游资讯</a><span>2016-10-09</span></li>
+        <li><a href="news.html">3.土耳其旅游资讯</a><span>2016-10-21</span></li>
+        <li><a href="news.html">4.安徽黄山资讯</a><span>2016-11-01</span></li>
+        <li><a href="news.html">5.阿根廷旅游资讯</a><span>2016-11-06</span></li>
+        <li><a href="news.html">6.喝一杯浓烈的威士忌</a><span>2016-11-08</span></li>
+        <li><a href="news.html">7.圣托里尼岛</a><span>2016-11-15</span></li>
+        <li><a href="news.html">8.君士坦丁堡</a><span>2016-11-22</span></li>
+        <li><a href="news.html">9.安徽黄山</a><span>2016-12-06</span></li>
+        <li><a href="news.html">10.伊瓜苏瀑布</a><span>2016-12-06</span></li>
+        <li><a href="news.html">11.伴着风笛声探寻北方的传说</a><span>2016-12-06</span></li>
+        <li><a href="news.html">12.世界上最宽的瀑布</a><span>2016-12-07</span></li>
+    </ul>
+    <ul id="con2">
+    </ul>
+</div>
+<!--  中间结束 --> 
+</div>
+<!--  滚动公告结束 --> 
+
+<script type="text/javascript">
+ var area = document.getElementById('moocBox');
+ var con1 = document.getElementById('con1');
+ var con2 = document.getElementById('con2');
+ var speed = 50;
+ area.scrollTop = 0;
+ con2.innerHTML = con1.innerHTML;
+ function scrollUp(){
+	 if(area.scrollTop >= con1.scrollHeight) {
+		 area.scrollTop = 0;
+		 }else{
+		   area.scrollTop ++; 
+		 } 
+}
+var myScroll = setInterval("scrollUp()",speed);
+area.onmouseover = function(){
+	 clearInterval(myScroll);
+	}
+area.onmouseout = function(){
+	 myScroll = setInterval("scrollUp()",speed);
+	}
+ </script></div>
+</div><!--col-md-4-->
+</div><!--row-->
+</div><!--container-->
+<div class="line"></div>
+</section><!--scrool-->
+<section id="squfont">
+<div class="container wow fadeInUp">
+<div class="row">
+<div class="col-md-5">
+<div class="keywords_title">
+                    <a href="route.html">更多&lt;&lt;</a>
+                </div>
+<div class="row">
+<div class="col-md-5">
+<a href="route.html"> 
+<img src="img/田园.jpg" style="display:inline-block; position:relative;    width: 224px;   height: 160px;">
+<span class="img-caption">诗人钟爱的田园生活</span></a>
+</div>
+<div class="col-md-2"></div>
+<div class="col-md-5">
+<a href="route.html"> 
+<img src="img/cc.jpg" style="display:inline-block; position:relative;
+width: 224px;   height: 160px;">
+<span class="img-caption">南纬八度的璀璨之境</span></a>
+</div>
+</div>
+</div><!--col-md-5-->
+<div class="col-md-7">
+<div class="containerword">
+            <div id="news_hotwords">
+                <div class="keywords_title" style="margin-left:36px;">
+                    <a href="route.html">旅游热搜词</a>
+                </div>
+                <div class="hotwords">
+                    <ul>
+                        <li class="li_0 li_color_0">
+                            <a class="hotwords_li_a" href="route.html"  >桂林旅游路线</a>
+                            <a class="detail" href="route.html"  >桂林旅游路线</a>
+                        </li>
+                        <li class="li_1 li_color_1">
+                            <a class="hotwords_li_a" href="route.html">漓江漂流</a>
+                            <a class="detail" href="route.html">漓江漂流</a>
+                        </li>
+                        <li class="li_2 li_color_0">
+                            <a class="hotwords_li_a" href="route.html">巴厘岛路线</a>
+                            <a class="detail" href="route.html">巴厘岛路线</a>
+                        </li>
+                        <li class="li_3 li_color_1">
+                            <a class="hotwords_li_a" href="route.html">巴杜尔火山</a>
+                            <a class="detail" href="route.html">巴杜尔火山</a>
+                        </li>
+                        <li class="li_4 li_color_0">
+                            <a class="hotwords_li_a" href="route.html">青海路线</a>
+                            <a class="detail" href="route.html">青海路线</a>
+                        </li>
+                        <li class="li_5 li_color_1">
+                            <a class="hotwords_li_a" href="route.html">年保玉则</a>
+                            <a class="detail" href="route.html">年保玉则</a>
+                        </li>
+                        <li class="li_6 li_color_0">
+                            <a class="hotwords_li_a" href="route.html">爱尔兰路线</a>
+                            <a class="detail" href="route.html">爱尔兰路线</a>
+                        </li>
+                        <li class="li_7 li_color_1">
+                            <a class="hotwords_li_a" href="route.html">克莱尔郡莫赫悬崖</a>
+                            <a class="detail" href="route.html">克莱尔郡莫赫悬崖</a>
+                        </li>
+                        <li class="li_8 li_color_0">
+                            <a class="hotwords_li_a" href="route.html">呼伦贝尔路线</a>
+                            <a class="detail" href="route.html">呼伦贝尔路线</a>
+                        </li>
+                        <li class="li_9 li_color_1">
+                            <a class="hotwords_li_a" href="route.html">海拉尔</a>
+                            <a class="detail" href="route.html">海拉尔</a>
+                        </li>
+                        <li class="li_10 li_color_0">
+                            <a class="hotwords_li_a" href="route.html">日月双塔 </a>
+                            <a class="detail" href="route.html">日月双塔 </a>
+                        </li>
+                        <li class="li_11 li_color_1">
+                            <a class="hotwords_li_a" href="route.html">库塔海滩</a>
+                            <a class="detail" href="route.html">库塔海滩</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--旅游热词-->
+ </div><!--col-md-7-->
+</div><!--row-->
+</div><!--container-->
+
+</section><!--squfont-->
+<section id="contact">
+<div class="filter">
+<div class="container">
+<div class="row">
+<div class="col-md-6 wow fadeInLeft">
+  <h2><span class="glyphicon glyphicon-send"></span>&nbsp; 联系我们</h2>
+  <p>酷游作为国内自助游服务网站先驱，从2016年开始一直致力于为旅行者提供多元化服务。形成了由酷游客栈、目的地攻略、结伴同行、旅行分享、手机平台等线上线下产品组成的一条龙服务，得到了全球旅行者一致好评。我们相信，每一个人都是世界的游客，最终都将消失在这个世界，希望游多多能帮您留住更多记忆，共同描绘出我们在地球上的绚丽足迹。</p>
+  <address>
+  <p><span class="glyphicon glyphicon-home"></span>  &nbsp;
+                            地址:安徽省合肥市瑶海区</p>
+  <p><span class="glyphicon glyphicon-phone-alt"></span>
+                            &nbsp;
+                            联系电话：123-4567890</p>
+  <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;
+                            邮箱:zt@126.com</p>
+  </address>
+</div>
+<div class="col-md-6 wow fadeInRight">
+<form action="#" method="post">
+<div class="col-md-6"><input type="text" class="form-control" placeholder="您的姓名"></div>
+<div class="col-md-6"><input type="email" class="form-control" placeholder="您的邮箱"></div>
+<div class="col-md-12"><input type="text" class="form-control" placeholder="标题"></div>
+<div class="col-md-12"><textarea class="form-control" placeholder="留言内容" rows="4"></textarea></div>
+<div class="col-md-8"><input type="submit" class="form-control" value="提交"></div>
+</form>
+</div>
+</div>
+</div><!--container-->
+</div><!--filter-->
+</section><!--contact-->
+<footer>
+<div class="col-md-12">Copyright&nbsp;©&nbsp;2012-2016&nbsp;&nbsp;www.cool.com&nbsp;&nbsp;蜀ICP备13014270号-4</div>
+</footer>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">新用户注册</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">注册邮箱:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="@qq.com">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">注册密码:</label>
+            <input type="text" class="form-control" id="recipt-key">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+      </div>
+    </div>
+  </div>
+</div><!--注册model-->
+
+
+<script src="bootstrap-3.3.5-dist/js/jquery.min.js"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.5-dist/js/jquery.singlePageNav.min.js"></script>
+<script src="bootstrap-3.3.5-dist/js/wow.min.js"></script>
+<script>
+    $(function(){
+        /*导航跳转效果插件*/
+        $('.nav-page').singlePageNav({
+            offset:70
+        });
+        /*小屏幕导航点击关闭菜单*/
+        $('.navbar-collapse a').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+    })
+</script>
+</body>
+</html>

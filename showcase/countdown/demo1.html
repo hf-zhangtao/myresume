@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>获取系统时间</title>
+
+<style>
+*{margin:0; padding:0;}
+</style>
+</head>
+<script type="text/javascript">
+window.onload=function(){showtime();}
+	function showtime(){
+		var mydate=new Date();
+	var odiv=document.getElementById('div1');
+	var year=new Date().getFullYear();
+	var month=mydate.getMonth()+1;
+	var day=mydate.getDay();
+	var date=mydate.getDate();
+	var weekday = new Array(7);
+	weekday[0]= "星期日";
+	weekday[1]= "星期一";
+	weekday[2]= "星期二";
+	weekday[3]= "星期三";
+	weekday[4]= "星期四";
+	weekday[5]= "星期五";
+	weekday[6]= "星期六";
+	var h =mydate.getHours();
+	var m =mydate.getMinutes();
+	var s =mydate.getSeconds();
+	m=checktime(m);
+	s=checktime(s);
+	odiv.innerHTML=year+'年'+month+'月'+date+'日'+weekday[day]+h+':'+m+':'+s;
+		setTimeout(showtime,500)
+		}
+	function checktime(i){
+		if(i<10){i='0'+i}
+		return i;
+		}
+</script>
+<body>
+
+<div id="div1" style="border:1px solid #000000; width:200px; height:200px; margin:20px;">66666</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>多物体透明度变化</title>
+<style type="text/css">
+*{margin:0; padding:0;}
+div{width:200px; height:200px; margin:20px; background-color:#FF0000; float:left;
+	filter:alpha(opacity:30);/*IE浏览器*/
+	opacity:0.3;/*其他浏览器*/}
+</style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<script type="text/javascript">
+window.onload=function(){
+	var adiv= document.getElementsByTagName("div");
+for (var i=0;i<adiv.length;i++) {
+adiv[i].alpha=30;
+adiv[i].onmouseover=function(){startmove(this,100);}
+adiv[i].onmouseout=function(){startmove(this,30);}
+}
+	//定义startmove
+	function startmove(obj,target){
+		clearInterval(obj.timer);
+		obj.timer=setInterval(function(){
+		var speed=0;	
+			
+		if(obj.alpha>target){speed=-10}
+		else{speed=10};
+		if(obj.alpha==target){clearInterval(obj.timer);}
+			else{obj.alpha+=speed;
+				obj.style.opacity=obj.alpha/100;	
+				obj.style.filter='alpha(opacity:'+obj.alpha+')'	;
+				
+					};	
+			},30)
+			
+		
+		}	
+	}
+
+</script>
+</body>
+</html>

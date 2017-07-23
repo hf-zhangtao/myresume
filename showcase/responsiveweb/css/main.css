@@ -1,0 +1,687 @@
+/*********
+    页面样式
+    **********/
+
+/*  ==========
+    基本默认值
+    ============  */
+html{
+    font-size:625%;
+    color: #222;
+}
+*{margin: 0;padding: 0;}
+body{font-size: 12px;}
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+::-moz-selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+a{color: #666;}
+a:hover,a:active{color: #0ae;}
+/* ==========
+   工具样式
+   ========== */
+ul{margin: 0; padding: 0;}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+/*头部部分*/
+header{width: 100%}
+
+.top {
+	line-height: 36px; line-height: 0.36rem;
+	padding: 0 18px; padding: 0 0.18rem;
+	color: #fff;
+	background-color: #555;
+	border-bottom: 1px #ecc900 solid;
+}
+.top ul li+li{border-left: 1px #999 solid;
+	margin-left: -3px;}
+
+
+.top ul{text-align: right}
+.top ul li{display: inline-block}
+.top ul li a{color: #fff; display: inline-block;
+			padding: 0 18px; padding: 0 0.18rem;
+		    		}			
+
+
+.tel {
+	float: left
+}
+
+.main {line-height: 64px; line-height: 0.64rem;
+	background-color: #F7F7F7;
+	
+}
+.main img{display: inline-block}
+.main img{vertical-align: middle}
+
+.brand {
+	float: left;
+	font-size: 0;
+}
+.main ul{text-align: right}
+
+.main ul li{display: inline-block;}
+
+.main ul li+li{border-left: 1px solid #F0EDE9}
+
+.main ul li a{display: inline-block;
+			 color:#7c7a65; padding: 0 30px; padding: 0 0.3rem;
+		     font-size: 16px; font-size: 0.16rem;
+				font-weight: bold;
+			}	
+
+.main ul li a:hover, .main ul li a:active{
+	color: #ffb300;
+    background-color: #f8f6f1}
+
+.transaction {width: 100%;
+	line-height: 28px; line-height: 0.28rem;
+	background-color: #7C7365;
+}
+
+.trans-content {max-width: 90%;
+				margin: 0 auto;
+			    font-size: 15px; font-size: 0.15rem;
+				color: #FFFFFF;
+	}
+
+.trans-data {
+	float: left;
+	padding:0 10px; padding: 0 0.1rem;
+}
+
+.trans-data span{display: inline-block;}
+
+
+
+.trans-money {
+	margin: 8px 10px; margin: 0.08rem 0.1rem;
+    padding: 0 10px; padding: 0 0.1rem;
+	background-color:rgba(255,255,255,0.90);
+	color: #FBA400; letter-spacing: 3px;
+	font-size: 22px; font-size: 0.22rem;
+	border-radius: 3px; box-shadow:1px 2px 1px #333 inset;
+}
+
+.trans-report a{line-height: 44px;
+				color: #fff;
+}
+
+.trans-report a {
+        font-size: 12px;
+		float: right;
+		display: inline-block;
+    }
+.ad {
+	
+}
+
+.feature {
+	margin: 12px auto; margin: 0.12rem auto;
+	width: 90%; /*font-size: 0;*/
+}
+.feature .item +.item{margin-left: 14px; margin-left: 0.14rem}
+
+.feature .item {display: inline-block;
+	padding: 15px; padding: 0.15rem;
+	width:29.5%;/*ie8*/
+	width: calc(33.333% - 0.46rem);/*3个item宽+3*2边*2px+2个空隙18px*2=100%宽度*/
+	font-size: 14px; font-size: 0.14rem;
+	font-size: 0;
+	margin: 2px; margin: 0.02rem;
+	box-shadow: 0 0 4px #ccc;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc');
+	/*for ie6,7,8*/
+	background-color: #fff;
+	/*IE 8兼容  必须要加背景色strength是阴影大小，direction是阴影方位，单位为度，可以为负数，color是阴影颜色 （尽量使用数字）
+                使用IE滤镜实现盒子阴影的盒子必须是行元素或以行元素显示（block或inline-block;）*/
+}
+
+.feature .item h3{display: inline-block; vertical-align: top;
+				 width: 40%;
+				  /*margin:30px 0 0 25px; margin: 0.3rem 0 0 0.25rem;*/
+	              color: #f90; font-size: 23px; font-size: 0.23rem;
+}
+
+.feature .item p{display: inline-block; font-size: 14px; font-size: 0.14rem;
+				width: 55%;	color: #999;				
+
+}
+
+
+.notice{width: 90%;
+	margin: 0 auto;
+	line-height: 34px; line-height: 0.34rem;
+	background-color: #fff;
+box-shadow: 0 0 4px #ccc;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc');
+	/*for ie6,7,8*/}
+
+.notice h3{display: inline-block;
+		color: #aaa;margin-left: 24px; margin-left: 0.24rem;
+}
+.notice span{display: inline-block; margin-left: 25px;margin-left: 0.25rem; color: #aaa;
+              margin-right: 10px; margin-right: 0.1rem;}
+
+.notice a:first-child{    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;width: 40%;
+}
+.notice .more{color:#f90;float: right; margin-right: 25px;margin-right: 0.25rem;}
+
+
+.product {
+	width: 90%; margin: 10px auto 12px;
+	box-shadow: 0 0 4px #ccc;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc');
+	/*for ie6,7,8*/
+	background-color: #fff;
+	border-top: 2px solid #f90;
+	overflow: hidden;
+}
+
+.product h2{width: 30%; float: left; color: #222; font-size: 24px; font-weight: normal;
+			text-align: center;	margin-top: 84px;margin-top: 0.84rem;}	
+.product h2 em{display: block;font-size: 16px; margin-top: 40px;}
+
+.product h2 em+em{margin-top:10px }
+
+.product-content {
+	width: 70%;float: left;
+}
+
+.product-content h3 {
+	display: inline-block; float: left;
+	width: 20%;
+	padding-top: 34px; padding-top: 0.34rem;
+	text-align: center;
+}
+
+.product-content em{color:#FCA700;font-size: 30px; font-size: 0.3rem;
+					margin-right: 8px; margin-right: 0.08rem;	
+					font-weight: normal;}
+
+.product-content h3 i{display: block; font-weight: normal; color: #999999;}
+
+.info {
+	display: inline-block; 
+	text-align: center;
+	width: 60%;
+	padding-top: 18px; padding-top:0.18rem;
+	padding-bottom: 48px; padding-bottom: 0.48rem;
+	float: left;
+	border-right: 1px solid #E6E6E6;
+	border-left: 1px solid #E6E6E6;
+}
+
+
+
+.info p{display: inline-block; float: left;
+		width: 46%;text-align: center;}
+.info p+p{width: 54%;}
+
+.buy {
+	display: inline-block; float: right;width: 19%;
+	text-align: center;
+}
+
+
+
+.buy a{display: block; 
+       /*width: 137px; width: 1.37rem;*/
+       height: 36px; height: 0.36rem;
+	   background-color: #f90;
+	line-height: 36px; line-height: 0.36rem;
+	border-radius: 4px;
+	margin: 30px auto 42px; margin: 0.3rem auto 0.42rem;
+	color:#fff;
+	width: 84%;
+}
+
+.year-rate {
+	
+	display: block;
+	color: #FCA700;
+	font-size: 16px;
+}
+
+.year-rate i{color: #222; font-size: 12px;}
+
+.money {
+	display: block;
+	color: #FCA700;
+	font-size: 16px;
+}
+
+.money i{color: #222; font-size: 12px;}
+
+.product-content .item {
+	width: 100%;
+	border: 1px solid #E6E6E6;
+	border-top: none;
+}
+
+.disabled {
+	cursor:not-allowed;
+	background-color: #ccc !important;
+}
+
+.footer-content {
+	width: 90%; margin: 0 auto;
+}
+
+.footer-content ul{float: left; width: 15%}
+
+.footer-brand {
+	width: 20%;
+	float: left;
+	display: block;
+	background: url(../images/logo@1x.png) no-repeat left;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	height: 35px;
+}
+
+.footer {
+	   
+}
+
+.footer .title {
+	font-size: 16px; font-size: 0.16rem;
+	line-height: 30px; line-height: 0.3rem;
+}
+
+.footer li{font-size: 14px; font-size: 0.14rem;
+           line-height: 24px; line-height: 0.24rem;
+}
+
+footer{
+	 width: 100%;
+   padding: 30px 0 50px ;padding: 0.3rem 0 0.5rem;
+    background-color: #ededed;
+}
+footer ul{text-align: center;}
+footer li{display: inline-block;}
+
+footer .icon {
+	display: inline-block;
+   	text-indent:-999px; text-indent: -9.99rem;
+    margin-right: 15px;margin-right: 0.15rem;
+    background:url(../images/cert1.png);
+    background-size: 466px 447px;
+    overflow: hidden;
+}
+
+footer .icon-zfyw {
+	width: 38px;
+    height: 27px;
+    background-position: -369px -45px;
+}
+
+footer .icon-visayz {
+    width: 36px;
+    height: 27px;
+    background-position: -426px -90px;
+}
+
+footer .icon-PCI {
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+
+footer ul li .icon-Visa {
+    width: 36px;
+    height: 27px;
+    background-position: -426px -90px;
+}
+footer .icon-vjm {
+    width: 63px;
+    height: 27px;
+    margin-right: 13px;
+    background-position: -401px -186px;
+}
+
+footer ul li .icon-wlgs {
+    width: 22px;
+    height: 27px;
+    background-position: -48px -48px;
+}
+
+footer ul li .icon-dzsw {
+    width: 75px;
+    height: 27px;
+    background-position: 0 -320px;
+}
+
+footer ul li .icon-hfgs {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    background:url(../images/cert2.png);
+    background-size: 30px;
+}
+
+footer p{    text-align: center;
+    color: #999;
+margin: 12px auto;}
+
+
+@media only screen and (max-width: 800px) {
+    header .top ul li a {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+    header .top .tel,
+    header .top ul li:nth-child(3),
+    header .top ul li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 15px auto 5px;
+        text-align: center;
+    }
+
+    header .main ul {
+        text-align: center;
+    }
+
+    header .main ul li {
+        border: none;
+    }
+
+    header .main ul li a {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header .main ul li {
+        line-height: 30px;
+    }
+
+    header .main ul li:first-child {
+        display: none;
+    }
+
+    header .main ul li a {
+        font-weight: normal;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .trans-data {
+        padding: 10px 5px;
+    }
+
+    .trans-data span {
+        font-size: 12px;
+    }
+
+    .trans-data span.trans-money {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .transaction {
+        padding: 5px 0;
+    }
+
+    .trans-data, .trans-report {
+        float: none;
+        text-align: center;
+    }
+	
+
+
+    .trans-data, .trans-report a {
+        padding: 0;
+		float: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+	
+    .feature .item h3,
+    .feature .item p {
+        display: block;
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .feature .item p {
+        font-size: 12px;
+    }
+	
+	.buy{width: 16%;}
+}
+
+@media only screen and (max-width: 480px) {
+
+    .feature {
+        width: 96%;
+        margin: 10px auto;
+    }
+
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+
+    .feature .item + .item {
+        margin: 10px 0 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .notice {
+        width: 96%;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+    .notice a {
+        margin-left: 10px;
+    }
+
+    .notice a span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .product h2 {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .product h2 em:first-child {
+        margin-top: 0;
+    }
+
+    .product h2 em {
+        display: inline;
+        font-size: 12px;
+    }
+
+    .product .product-content {
+        float: none;
+        width: 100%;
+    }
+
+    .product .product-content .item h3 {
+        margin-bottom: 0
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 24px;
+    }
+
+    .product .product-content .item .info {
+        padding: 10px 10px 0;
+        font-size: 12px;
+    }
+
+    .product .product-content .item .info p span {
+        font-size: 20px;
+    }
+
+    .product .product-content .item .buy a {
+        margin: 5px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .product {
+        width: 96%;
+    }
+
+    .product h2 em:first-child:before {
+        content: " ";
+        display: table;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .product .product-content .item .info {
+        float: right;
+        width: 70%;
+        padding: 10px 0;
+        border: none;
+    }
+
+    .product .product-content .item .info p span {
+        font-size: 18px;
+    }
+
+    .product .product-content .item .buy {
+        clear: both;
+        float: none;
+        width: 100%;
+        padding: 10px 0 20px;
+    }
+
+    .product .product-content .item .buy a {
+        margin-top: 0;
+        max-width: 260px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .footer-content .brand {
+        display: none;
+    }
+
+    .footer-content ul {
+        width: 20%;
+    }
+
+    .footer-content ul li {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer-content ul li.title {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-content {
+        width: 98%;
+    }
+
+    .footer-content ul li.title {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
